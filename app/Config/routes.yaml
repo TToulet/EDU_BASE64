@@ -1,0 +1,14 @@
+index:
+    uri: /
+    controller: Controller\HomeController
+    httpMethod: [GET]
+
+encode:
+    uri: /encode
+    controller: Controller\EncodeController
+    httpMethod: [GET,POST]
+
+decode:
+    uri: /decode
+    controller: Controller\DecodeController
+    httpMethod: [ GET,POST ]

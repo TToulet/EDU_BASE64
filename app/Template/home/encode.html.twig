@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{{ titre }}{% endblock %}
+
+{% block content %}
+    <h1>{{ titre }}</h1>
+    <div id="page">
+        <div id="page_btn">
+            <form method="POST" action="/encode">
+                <input name="message" id="encode_txt" placeholder="Entrer votre texte" type="text">
+                <button name="encode_btn" id="encode_btn">Encoder</button>
+                <br>
+                <br>
+                <label name="encode_label" id="encode_label" style="width: 265px; border: 2px black solid">{{ message }}</label>
+                <br>
+                <a href="/decode">Vers la page DECODE<a/>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+

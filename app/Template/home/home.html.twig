@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{{ titre }}{% endblock %}
+
+{% block content %}
+    <h1>{{ titre }}</h1>
+        <div class="d-flex justify-center" id="choisir">
+            <a class="mx-5" href="/encode">Page Encode</a>
+            <a href="/decode">Page Decode</a>
+        </div>
+{% endblock %}
+
